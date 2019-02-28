@@ -23,8 +23,8 @@ reddit = praw.Reddit(client_id='youclientid',
 subreddit = reddit.subreddit('subreddit') #The subreddit your gonna use
 
 secinterval = 15 #Seconds
-mininterval = 15 #Minutes
-hrinterval = 1 #Hours
+mininterval = 60 * 15 #Minutes
+hrinterval = 60 * 60 * 1 #Hours
 
 while True:
     random_submission = reddit.subreddit('subreddit').random() #Name the subreddit
